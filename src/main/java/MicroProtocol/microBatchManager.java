@@ -7,7 +7,7 @@
 package MicroProtocol;
 
 import MicroProtocol.listeners.BatchFileListListener;
-import VTC.ImageSelectionListener;
+import vtea.ImageSelectionListener;
 import ij.ImagePlus;
 import ij.WindowManager;
 import java.awt.event.ActionEvent;

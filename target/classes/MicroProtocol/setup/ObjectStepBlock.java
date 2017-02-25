@@ -1,7 +1,7 @@
 package MicroProtocol.setup;
 
 import MicroProtocol.listeners.MicroBlockSetupListener;
-import VTC._VTC;
+import vtea._VTEA;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.GridBagConstraints;

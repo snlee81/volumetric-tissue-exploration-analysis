@@ -39,7 +39,7 @@ import javax.swing.JToggleButton;
 import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import vteapreprocessing.MicroProtocolPreProcessing;
+import vteaimageprocessing.MicroProtocolPreProcessing;
 
 /**
  *
@@ -101,7 +101,7 @@ public class MicroBlockProcessSetup extends MicroBlockSetup implements ChangeLis
         //imagePanel.setBackground(Color.red);
         imagePanel.setPreferredSize(new Dimension(256,256));
         imagePanel.setMinimumSize(new Dimension(256,256));
-        imagePanel.setBackground(VTC._VTC.BACKGROUND);
+        imagePanel.setBackground(vtea._VTEA.BACKGROUND);
         
         methodBuild.setLayout(new GridBagLayout());
         
@@ -136,7 +136,7 @@ public class MicroBlockProcessSetup extends MicroBlockSetup implements ChangeLis
             JPanel previewControlPanel = new JPanel();
             
             previewControlPanel.setMinimumSize(new Dimension(50, 280));
-            previewControlPanel.setBackground(VTC._VTC.BACKGROUND);
+            previewControlPanel.setBackground(vtea._VTEA.BACKGROUND);
             
             GridBagLayout gb = new GridBagLayout();
             
@@ -259,7 +259,7 @@ public class MicroBlockProcessSetup extends MicroBlockSetup implements ChangeLis
         //imagePanel.setBackground(Color.red);
         imagePanel.setPreferredSize(new Dimension(256,256));
         imagePanel.setMinimumSize(new Dimension(256,256));
-        imagePanel.setBackground(VTC._VTC.BACKGROUND);
+        imagePanel.setBackground(vtea._VTEA.BACKGROUND);
 
         
         GridBagConstraints layoutConstraints = new GridBagConstraints();

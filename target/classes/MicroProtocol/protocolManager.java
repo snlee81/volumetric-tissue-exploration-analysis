@@ -6,7 +6,7 @@
 package MicroProtocol;
 
 import MicroProtocol.menus.MultipleFilesMenu;
-import vteapreprocessing.MicroProtocolPreProcessing;
+import vteaimageprocessing.MicroProtocolPreProcessing;
 import MicroProtocol.listeners.AnalysisStartListener;
 import MicroProtocol.listeners.BatchStateListener;
 import MicroProtocol.listeners.MicroBlockSetupListener;
@@ -14,8 +14,8 @@ import MicroProtocol.listeners.BatchFileListListener;
 import MicroProtocol.setup.MicroBlockObjectSetup;
 import MicroProtocol.setup.MicroBlockProcessSetup;
 import vteaexploration.MicroExplorer;
-import VTC.ImageSelectionListener;
-import VTC.OpenImageWindow;
+import vtea.ImageSelectionListener;
+import vtea.OpenImageWindow;
 import ij.CompositeImage;
 import ij.IJ;
 import ij.ImagePlus;
@@ -266,7 +266,7 @@ public class protocolManager extends javax.swing.JFrame implements ImageSelectio
             }
         });
 
-        PreProcessingStepsPanel.setBackground(VTC._VTC.ACTIONPANELBACKGROUND);
+        PreProcessingStepsPanel.setBackground(vtea._VTEA.ACTIONPANELBACKGROUND);
         PreProcessingStepsPanel.setComponentPopupMenu(PreProcessing_Contextual);
         PreProcessingStepsPanel.setPreferredSize(new java.awt.Dimension(196, 306));
 
@@ -415,7 +415,7 @@ public class protocolManager extends javax.swing.JFrame implements ImageSelectio
             }
         });
 
-        ObjectStepsPanel.setBackground(VTC._VTC.ACTIONPANELBACKGROUND);
+        ObjectStepsPanel.setBackground(vtea._VTEA.ACTIONPANELBACKGROUND);
         ObjectStepsPanel.setComponentPopupMenu(PreProcessing_Contextual);
         ObjectStepsPanel.setPreferredSize(new java.awt.Dimension(160, 305));
 
@@ -562,7 +562,7 @@ public class protocolManager extends javax.swing.JFrame implements ImageSelectio
             }
         });
 
-        ExploreStepsPanel.setBackground(VTC._VTC.ACTIONPANELBACKGROUND);
+        ExploreStepsPanel.setBackground(vtea._VTEA.ACTIONPANELBACKGROUND);
         ExploreStepsPanel.setComponentPopupMenu(PreProcessing_Contextual);
         ExploreStepsPanel.setPreferredSize(new java.awt.Dimension(160, 305));
 
@@ -1043,7 +1043,7 @@ public class protocolManager extends javax.swing.JFrame implements ImageSelectio
 
             al = (ArrayList) al2.get(0);
 
-            Object.setText(VTC._VTC.PROCESSOPTIONS[0]);
+            Object.setText(vtea._VTEA.SEGMENTATIONOPTIONS[0]);
             //Comment.setText(al.get(1).toString());
             RebuildPanelObject();
             this.settings = al2;

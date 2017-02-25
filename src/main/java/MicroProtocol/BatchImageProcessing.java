@@ -7,7 +7,6 @@
 package MicroProtocol;
 
 import MicroProtocol.listeners.BatchStateListener;
-import static VTC._VTC.PROCESSOPTIONS;
 import ij.IJ;
 import java.io.File;
 import java.util.ArrayList;
@@ -16,6 +15,7 @@ import java.util.ListIterator;
 import javax.swing.DefaultCellEditor;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.DefaultListModel;
+import static vtea._VTEA.SEGMENTATIONOPTIONS;
 
 /**
  *
@@ -166,7 +166,7 @@ public class BatchImageProcessing extends javax.swing.JPanel implements BatchSta
         FileList_Panel.setPreferredSize(new java.awt.Dimension(220, 360));
         FileList_Panel.setLayout(new java.awt.GridBagLayout());
 
-        PreProcessingStepsPanel.setBackground(VTC._VTC.ACTIONPANELBACKGROUND);
+        PreProcessingStepsPanel.setBackground(vtea._VTEA.ACTIONPANELBACKGROUND);
         PreProcessingStepsPanel.setPreferredSize(new java.awt.Dimension(196, 350));
 
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -234,7 +234,7 @@ public class BatchImageProcessing extends javax.swing.JPanel implements BatchSta
         Options_Panel.setPreferredSize(new java.awt.Dimension(440, 360));
         Options_Panel.setRequestFocusEnabled(false);
 
-        ObjectStepsPanel.setBackground(VTC._VTC.ACTIONPANELBACKGROUND);
+        ObjectStepsPanel.setBackground(vtea._VTEA.ACTIONPANELBACKGROUND);
         ObjectStepsPanel.setMinimumSize(new java.awt.Dimension(320, 305));
         ObjectStepsPanel.setPreferredSize(new java.awt.Dimension(320, 305));
         ObjectStepsPanel.setLayout(new java.awt.GridBagLayout());

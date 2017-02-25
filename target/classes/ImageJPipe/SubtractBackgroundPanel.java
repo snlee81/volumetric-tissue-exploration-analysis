@@ -74,14 +74,14 @@ public class SubtractBackgroundPanel extends javax.swing.JPanel {
 
         Go.setText("OK");
         Go.setToolTipText("");
-        Go.setMaximumSize(VTC._VTC.SMALLBUTTONSIZE);
-        Go.setMinimumSize(VTC._VTC.SMALLBUTTONSIZE);
-        Go.setPreferredSize(VTC._VTC.SMALLBUTTONSIZE);
+        Go.setMaximumSize(vtea._VTEA.SMALLBUTTONSIZE);
+        Go.setMinimumSize(vtea._VTEA.SMALLBUTTONSIZE);
+        Go.setPreferredSize(vtea._VTEA.SMALLBUTTONSIZE);
 
         Preview.setText("jToggleButton1");
-        Preview.setMaximumSize(VTC._VTC.SMALLBUTTONSIZE);
-        Preview.setMinimumSize(VTC._VTC.SMALLBUTTONSIZE);
-        Preview.setPreferredSize(VTC._VTC.SMALLBUTTONSIZE);
+        Preview.setMaximumSize(vtea._VTEA.SMALLBUTTONSIZE);
+        Preview.setMinimumSize(vtea._VTEA.SMALLBUTTONSIZE);
+        Preview.setPreferredSize(vtea._VTEA.SMALLBUTTONSIZE);
 
         javax.swing.GroupLayout VariablePaneLayout = new javax.swing.GroupLayout(VariablePane);
         VariablePane.setLayout(VariablePaneLayout);

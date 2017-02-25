@@ -16,7 +16,7 @@ import javax.swing.SwingWorker;
 import vteaobjects.MicroObjectModel;
 import vteaobjects.layercake.microDerivedRegion;
 import vteaobjects.layercake.microVolume;
-import vteapreprocessing.MicroProtocolPreProcessing;
+import vteaimageprocessing.MicroProtocolPreProcessing;
 
 /**
  *

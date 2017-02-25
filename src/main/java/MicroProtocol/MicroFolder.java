@@ -6,7 +6,7 @@
 package MicroProtocol;
 
 import ij.IJ;
-import vteaobjects.layercake.SingleThresholdDataModel;
+import vteaobjects.Segmentation.SingleThresholdDataModel;
 import vteaobjects.layercake.microVolume;
 import ij.ImagePlus;
 import ij.ImageStack;

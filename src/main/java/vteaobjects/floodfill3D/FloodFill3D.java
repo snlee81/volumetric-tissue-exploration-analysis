@@ -12,10 +12,13 @@ import javax.swing.SwingWorker;
 import java.util.concurrent.ForkJoinPool;
 import static java.util.concurrent.ForkJoinTask.invokeAll;
 import java.util.concurrent.RecursiveAction;
+import org.scijava.plugin.Plugin;
 import vteaobjects.MicroObject;
+import vteaobjects.Segmentation.Segmentation;
 import vteaobjects.layercake.*;
 
-public class FloodFill3D extends Object implements Cloneable, java.io.Serializable {
+@Plugin (type = Segmentation.class)
+public class FloodFill3D implements Segmentation {
 
     /**
      * Constants
@@ -120,6 +123,26 @@ public class FloodFill3D extends Object implements Cloneable, java.io.Serializab
     public void makeDerivedRegions(){
     
     
+    }
+
+    @Override
+    public ImagePlus getSegmentation() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String getName() {
+        return "FloodFill 3D";
+    }
+
+    @Override
+    public String getKey() {
+        return "FloodFill3D";
+    }
+
+    @Override
+    public ArrayList<MicroObject> getObjects() {
+        return new ArrayList(alVolumes);
     }
     
       private class DerivedRegionForkPool extends RecursiveAction {

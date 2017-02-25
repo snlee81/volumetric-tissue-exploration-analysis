@@ -17,8 +17,8 @@ import MicroProtocol.menus.AvailableWorkflowsMenu;
 import MicroProtocol.menus.JMenuBatch;
 import MicroProtocol.menus.JMenuProtocol;
 import MicroProtocol.menus.LengthFilter;
-import VTC.ImageSelectionListener;
-import VTC.OpenImageWindow;
+import vtea.ImageSelectionListener;
+import vtea.OpenImageWindow;
 import ij.ImagePlus;
 import java.awt.Color;
 import java.awt.GridLayout;
@@ -103,7 +103,7 @@ public class ProtocolManagerMulti extends javax.swing.JFrame implements ImageSel
         addNewTabTab();
         addSingleImagePanel();
         addMenuItems();
-        this.ImageTabs.setTabPlacement(JTabbedPane.BOTTOM);
+        this.ImageTabs.setTabPlacement(JTabbedPane.TOP);
         this.ImageTabs.setSelectedIndex(ImageTabs.getTabCount() - 1);
         //IJ.log("Starting things up!");
     }
@@ -143,7 +143,7 @@ public class ProtocolManagerMulti extends javax.swing.JFrame implements ImageSel
         jPopUpAddParallelAnalysis.add(jMenuItem1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("VTEA-Protocols v." + VTC._VTC.VERSION);
+        setTitle("VTEA-Protocols v." + vtea._VTEA.VERSION);
         setBackground(new java.awt.Color(204, 204, 204));
         setBounds(new java.awt.Rectangle(30, 100, 890, 400));
         setMaximumSize(new java.awt.Dimension(760, 480));
@@ -157,7 +157,7 @@ public class ProtocolManagerMulti extends javax.swing.JFrame implements ImageSel
         });
         getContentPane().setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 1, 1));
 
-        ImageTabs.setBackground(VTC._VTC.ACTIONPANELBACKGROUND);
+        ImageTabs.setBackground(vtea._VTEA.ACTIONPANELBACKGROUND);
         ImageTabs.setTabPlacement(javax.swing.JTabbedPane.LEFT);
         ImageTabs.setToolTipText("");
         ImageTabs.setMaximumSize(new java.awt.Dimension(761, 410));

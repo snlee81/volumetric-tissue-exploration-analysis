@@ -76,8 +76,9 @@ public class MicroBlockObjectSetup extends MicroBlockSetup {
         
         makeProtocolPanel(step);
 
-        super.cbm = new DefaultComboBoxModel(VTC._VTC.PROCESSOPTIONS);
-        super.cbm.setSelectedItem("Select Method");
+        super.cbm = new DefaultComboBoxModel(vtea._VTEA.SEGMENTATIONOPTIONS);
+        super.cbm.setSelectedItem("LayerCake 3D");
+        
         setBounds(new java.awt.Rectangle(500, 160, 378, 282));
 
         TitleText.setText("Object_" + (step));
@@ -148,7 +149,7 @@ public class MicroBlockObjectSetup extends MicroBlockSetup {
    
     @Override
     protected void updateProtocolPanel(java.awt.event.ActionEvent evt) {
-        if(ProcessSelectComboBox.getSelectedIndex() != 0){
+        if(!vtea._VTEA.SEGMENTATIONOPTIONS[ProcessSelectComboBox.getSelectedIndex()].equalsIgnoreCase("Select Method")){
         if(evt.getSource() == ChannelComboBox){
             
             Point p = new Point();
@@ -185,6 +186,8 @@ public class MicroBlockObjectSetup extends MicroBlockSetup {
     protected JPanel makeProtocolPanel(int position) {
 
         ArrayList ProcessComponents;
+        
+        //position++;
             
         if (CurrentProcessItems.get(position) == null) {
             ProcessComponents = CurrentProcessItems.set(position, makeMethodComponentsArray(position));
@@ -244,7 +247,7 @@ public class MicroBlockObjectSetup extends MicroBlockSetup {
 
             methodBuild.removeAll();
         
-        if(this.ProcessSelectComboBox.getSelectedIndex() != 0){
+        if(!vtea._VTEA.SEGMENTATIONOPTIONS[ProcessSelectComboBox.getSelectedIndex()].equalsIgnoreCase("Select Method")){
             methodBuild.add(mta.getPanel());
         
             layoutConstraints.fill = GridBagConstraints.CENTER;
@@ -349,7 +352,7 @@ public class MicroBlockObjectSetup extends MicroBlockSetup {
     }
 
     public static String getMethod(int i) {
-        return VTC._VTC.PROCESSOPTIONS[i];
+        return vtea._VTEA.SEGMENTATIONOPTIONS[i];
     }
 
     @Override

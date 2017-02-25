@@ -98,11 +98,11 @@ import javax.swing.JPanel;
             });
 
             DeleteButton.setSize(20, 20);
-            DeleteButton.setBackground(VTC._VTC.BUTTONBACKGROUND);
+            DeleteButton.setBackground(vtea._VTEA.BUTTONBACKGROUND);
             DeleteButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/edit-delete-6_16.png")));
 
             EditButton.setSize(20, 20);
-            EditButton.setBackground(VTC._VTC.BUTTONBACKGROUND);
+            EditButton.setBackground(vtea._VTEA.BUTTONBACKGROUND);
             EditButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/edit-4.png")));
 
             step.setSize(205, 20);

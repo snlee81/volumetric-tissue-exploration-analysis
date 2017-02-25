@@ -6,7 +6,7 @@
 package MicroProtocol.setup;
 
 import MicroProtocol.listeners.MicroBlockSetupListener;
-import VTC._VTC;
+import vtea._VTEA;
 import ij.IJ;
 import ij.ImagePlus;
 import java.awt.Component;
@@ -126,7 +126,7 @@ public class MicroBlockSetup extends javax.swing.JFrame implements Cloneable {
 
         setBackground(new java.awt.Color(204, 204, 204));
         setBounds(new java.awt.Rectangle(110, 160, 378, 282));
-        setMinimumSize(VTC._VTC.BLOCKSETUP);
+        setMinimumSize(vtea._VTEA.BLOCKSETUP);
         setName("BlockOptionFrame"); // NOI18N
         setSize(new java.awt.Dimension(378, 282));
         java.awt.GridBagLayout layout = new java.awt.GridBagLayout();
@@ -134,7 +134,7 @@ public class MicroBlockSetup extends javax.swing.JFrame implements Cloneable {
         layout.rowHeights = new int[] {0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0};
         getContentPane().setLayout(layout);
 
-        methodBuild.setBackground(VTC._VTC.BACKGROUND);
+        methodBuild.setBackground(vtea._VTEA.BACKGROUND);
         methodBuild.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         methodBuild.setMaximumSize(new java.awt.Dimension(359, 300));
         methodBuild.setMinimumSize(new java.awt.Dimension(359, 300));
@@ -150,13 +150,13 @@ public class MicroBlockSetup extends javax.swing.JFrame implements Cloneable {
         gridBagConstraints.gridy = 6;
         getContentPane().add(AlgorithmStyle, gridBagConstraints);
 
-        methodSelection.setBackground(VTC._VTC.BACKGROUND);
+        methodSelection.setBackground(vtea._VTEA.BACKGROUND);
         methodSelection.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         methodSelection.setPreferredSize(new java.awt.Dimension(359, 40));
         methodSelection.setLayout(new java.awt.GridBagLayout());
 
         TitleText.setEditable(false);
-        TitleText.setBackground(VTC._VTC.BACKGROUND);
+        TitleText.setBackground(vtea._VTEA.BACKGROUND);
         TitleText.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         TitleText.setText("Processing");
         TitleText.setBorder(null);
@@ -204,14 +204,14 @@ public class MicroBlockSetup extends javax.swing.JFrame implements Cloneable {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         getContentPane().add(methodSelection, gridBagConstraints);
 
-        comments.setBackground(VTC._VTC.BACKGROUND);
+        comments.setBackground(vtea._VTEA.BACKGROUND);
         comments.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         comments.setMaximumSize(new java.awt.Dimension(359, 100));
         comments.setMinimumSize(new java.awt.Dimension(359, 100));
         comments.setPreferredSize(new java.awt.Dimension(359, 100));
         comments.setLayout(new javax.swing.BoxLayout(comments, javax.swing.BoxLayout.LINE_AXIS));
 
-        notesPane.setBackground(VTC._VTC.BACKGROUND);
+        notesPane.setBackground(vtea._VTEA.BACKGROUND);
         notesPane.setLayout(new java.awt.BorderLayout(10, 0));
 
         jLabel3.setText("Notes");
@@ -290,13 +290,13 @@ public class MicroBlockSetup extends javax.swing.JFrame implements Cloneable {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         getContentPane().add(comments, gridBagConstraints);
 
-        buttonPanel.setMinimumSize(VTC._VTC.BLOCKSETUPPANEL);
+        buttonPanel.setMinimumSize(vtea._VTEA.BLOCKSETUPPANEL);
         buttonPanel.setLayout(new java.awt.GridBagLayout());
 
         BlockSetupOK.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/dialog-apply.png"))); // NOI18N
-        BlockSetupOK.setMaximumSize(VTC._VTC.SMALLBUTTONSIZE);
-        BlockSetupOK.setMinimumSize(VTC._VTC.SMALLBUTTONSIZE);
-        BlockSetupOK.setPreferredSize(VTC._VTC.SMALLBUTTONSIZE);
+        BlockSetupOK.setMaximumSize(vtea._VTEA.SMALLBUTTONSIZE);
+        BlockSetupOK.setMinimumSize(vtea._VTEA.SMALLBUTTONSIZE);
+        BlockSetupOK.setPreferredSize(vtea._VTEA.SMALLBUTTONSIZE);
         BlockSetupOK.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BlockSetupOKActionPerformed(evt);
@@ -312,9 +312,9 @@ public class MicroBlockSetup extends javax.swing.JFrame implements Cloneable {
         buttonPanel.add(filler1, gridBagConstraints);
 
         BlockSetupCancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/edit-delete-6_24.png"))); // NOI18N
-        BlockSetupCancel.setMaximumSize(VTC._VTC.SMALLBUTTONSIZE);
-        BlockSetupCancel.setMinimumSize(VTC._VTC.SMALLBUTTONSIZE);
-        BlockSetupCancel.setPreferredSize(VTC._VTC.SMALLBUTTONSIZE);
+        BlockSetupCancel.setMaximumSize(vtea._VTEA.SMALLBUTTONSIZE);
+        BlockSetupCancel.setMinimumSize(vtea._VTEA.SMALLBUTTONSIZE);
+        BlockSetupCancel.setPreferredSize(vtea._VTEA.SMALLBUTTONSIZE);
         BlockSetupCancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BlockSetupCancelActionPerformed(evt);
@@ -332,7 +332,7 @@ public class MicroBlockSetup extends javax.swing.JFrame implements Cloneable {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
         getContentPane().add(buttonPanel, gridBagConstraints);
 
-        channelSelection.setBackground(VTC._VTC.BACKGROUND);
+        channelSelection.setBackground(vtea._VTEA.BACKGROUND);
         channelSelection.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         channelSelection.setPreferredSize(new java.awt.Dimension(359, 33));
         channelSelection.setLayout(new java.awt.GridBagLayout());
@@ -347,7 +347,7 @@ public class MicroBlockSetup extends javax.swing.JFrame implements Cloneable {
         gridBagConstraints.insets = new java.awt.Insets(6, 6, 6, 0);
         channelSelection.add(ProcessText, gridBagConstraints);
 
-        ProcessSelectComboBox.setBackground(VTC._VTC.BACKGROUND);
+        ProcessSelectComboBox.setBackground(vtea._VTEA.BACKGROUND);
         ProcessSelectComboBox.setModel(this.cbm);
         ProcessSelectComboBox.setMaximumSize(new java.awt.Dimension(150, 27));
         ProcessSelectComboBox.setMinimumSize(new java.awt.Dimension(150, 27));
@@ -372,7 +372,7 @@ public class MicroBlockSetup extends javax.swing.JFrame implements Cloneable {
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         getContentPane().add(channelSelection, gridBagConstraints);
 
-        Approach.setBackground(VTC._VTC.BACKGROUND);
+        Approach.setBackground(vtea._VTEA.BACKGROUND);
         Approach.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Approach.setMinimumSize(new java.awt.Dimension(359, 41));
         Approach.setPreferredSize(new java.awt.Dimension(359, 41));
@@ -396,14 +396,14 @@ public class MicroBlockSetup extends javax.swing.JFrame implements Cloneable {
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         getContentPane().add(Approach, gridBagConstraints);
 
-        methodMorphology.setBackground(VTC._VTC.BACKGROUND);
+        methodMorphology.setBackground(vtea._VTEA.BACKGROUND);
         methodMorphology.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         methodMorphology.setMaximumSize(new java.awt.Dimension(359, 300));
         methodMorphology.setMinimumSize(new java.awt.Dimension(359, 100));
         methodMorphology.setPreferredSize(new java.awt.Dimension(359, 75));
 
         defaultProtocolPanel();
-        MethodDetails.setBackground(VTC._VTC.BACKGROUND);
+        MethodDetails.setBackground(vtea._VTEA.BACKGROUND);
         MethodDetails.setMaximumSize(new java.awt.Dimension(340, 250));
         MethodDetails.setMinimumSize(new java.awt.Dimension(340, 50));
         MethodDetails.setPreferredSize(new java.awt.Dimension(350, 50));
@@ -617,7 +617,7 @@ public class MicroBlockSetup extends javax.swing.JFrame implements Cloneable {
             //layoutConstraints.weighty = 1;
             MethodDetails.add((Component) ProcessComponents.get(7), layoutConstraints);
         }
-        //MethodDetails.setSize(_VTC.BLOCKSETUPPANEL);
+        //MethodDetails.setSize(_VTEA.BLOCKSETUPPANEL);
 //                layoutConstraints.fill = GridBagConstraints.BOTH;
 //        layoutConstraints.gridx = 2;
 //        layoutConstraints.gridy = 0;

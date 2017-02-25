@@ -17,7 +17,7 @@ import MicroProtocol.listeners.TransferProtocolStepsListener;
 import MicroProtocol.setup.MicroBlockObjectSetup;
 import MicroProtocol.blockstepGUI.ProcessStepBlockGUI;
 import MicroProtocol.listeners.UpdatedProtocolListener;
-import VTC.ImageSelectionListener;
+import vtea.ImageSelectionListener;
 import ij.IJ;
 import ij.ImagePlus;
 import java.awt.Color;
@@ -38,7 +38,7 @@ import javax.swing.JProgressBar;
 import javax.swing.JWindow;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
-import vteapreprocessing.MicroProtocolPreProcessing;
+import vteaimageprocessing.MicroProtocolPreProcessing;
 
 /**
  *
@@ -153,7 +153,7 @@ public class SingleImageProcessing extends javax.swing.JPanel implements ImageSe
         Preprocessing_Header.setPreferredSize(new java.awt.Dimension(300, 36));
         Preprocessing_Header.setLayout(new java.awt.GridBagLayout());
 
-        OpenImage.setBackground(VTC._VTC.BUTTONBACKGROUND);
+        OpenImage.setBackground(vtea._VTEA.BUTTONBACKGROUND);
         OpenImage.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         OpenImage.setText("Load Image");
         OpenImage.setToolTipText("Load image for processing.");
@@ -198,7 +198,7 @@ public class SingleImageProcessing extends javax.swing.JPanel implements ImageSe
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
         Preprocessing_Header.add(AddStep_Preprocessing, gridBagConstraints);
 
-        DeleteAllSteps_PreProcessing.setBackground(VTC._VTC.BUTTONBACKGROUND);
+        DeleteAllSteps_PreProcessing.setBackground(vtea._VTEA.BUTTONBACKGROUND);
         DeleteAllSteps_PreProcessing.setForeground(new java.awt.Color(102, 102, 102));
         DeleteAllSteps_PreProcessing.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/edit-clear-list_24.png"))); // NOI18N
         DeleteAllSteps_PreProcessing.setToolTipText("Delete all processing");
@@ -229,7 +229,7 @@ public class SingleImageProcessing extends javax.swing.JPanel implements ImageSe
         PreProcessing_Panel.setMinimumSize(new java.awt.Dimension(300, 300));
         PreProcessing_Panel.setPreferredSize(new java.awt.Dimension(300, 300));
 
-        PreProcessingStepsPanel.setBackground(VTC._VTC.ACTIONPANELBACKGROUND);
+        PreProcessingStepsPanel.setBackground(vtea._VTEA.ACTIONPANELBACKGROUND);
         PreProcessingStepsPanel.setPreferredSize(new java.awt.Dimension(196, 245));
 
         javax.swing.GroupLayout PreProcessingStepsPanelLayout = new javax.swing.GroupLayout(PreProcessingStepsPanel);
@@ -243,7 +243,7 @@ public class SingleImageProcessing extends javax.swing.JPanel implements ImageSe
             .addGap(0, 245, Short.MAX_VALUE)
         );
 
-        PreProcessingGo.setBackground(VTC._VTC.BUTTONBACKGROUND);
+        PreProcessingGo.setBackground(vtea._VTEA.BUTTONBACKGROUND);
         PreProcessingGo.setText("Process");
         PreProcessingGo.setToolTipText("Process the loaded image.");
         PreProcessingGo.setEnabled(false);
@@ -385,7 +385,7 @@ public class SingleImageProcessing extends javax.swing.JPanel implements ImageSe
         Object_Panel.setPreferredSize(new java.awt.Dimension(440, 300));
         Object_Panel.setRequestFocusEnabled(false);
 
-        ObjectStepsPanel.setBackground(VTC._VTC.ACTIONPANELBACKGROUND);
+        ObjectStepsPanel.setBackground(vtea._VTEA.ACTIONPANELBACKGROUND);
         ObjectStepsPanel.setPreferredSize(new java.awt.Dimension(160, 245));
 
         javax.swing.GroupLayout ObjectStepsPanelLayout = new javax.swing.GroupLayout(ObjectStepsPanel);
@@ -399,7 +399,7 @@ public class SingleImageProcessing extends javax.swing.JPanel implements ImageSe
             .addGap(0, 245, Short.MAX_VALUE)
         );
 
-        ObjectGo.setBackground(VTC._VTC.BUTTONBACKGROUND);
+        ObjectGo.setBackground(vtea._VTEA.BUTTONBACKGROUND);
         ObjectGo.setText("Find Objects");
         ObjectGo.setToolTipText("Find segmented objects.");
         ObjectGo.setEnabled(false);
@@ -534,7 +534,7 @@ public class SingleImageProcessing extends javax.swing.JPanel implements ImageSe
     }).start();
 
         ObjectProcess.setValue(0);
-        this.FindObjectText.setForeground(VTC._VTC.ACTIVETEXT);
+        this.FindObjectText.setForeground(vtea._VTEA.ACTIVETEXT);
         this.AddStep_Object.setEnabled(true);
     }//GEN-LAST:event_PreProcessingGoActionPerformed
 
@@ -763,11 +763,11 @@ public class SingleImageProcessing extends javax.swing.JPanel implements ImageSe
             });
 
             DeleteButton.setSize(20, 20);
-            DeleteButton.setBackground(VTC._VTC.BUTTONBACKGROUND);
+            DeleteButton.setBackground(vtea._VTEA.BUTTONBACKGROUND);
             DeleteButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/edit-delete-6_16.png")));
 
             EditButton.setSize(20, 20);
-            EditButton.setBackground(VTC._VTC.BUTTONBACKGROUND);
+            EditButton.setBackground(vtea._VTEA.BUTTONBACKGROUND);
             EditButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/edit-4.png")));
 
             step.setSize(205, 20);
@@ -880,7 +880,7 @@ public class SingleImageProcessing extends javax.swing.JPanel implements ImageSe
 
             MethodText = " " + al_key.get(0).toString() + ": " + al.get(3).toString() + " " + al_key.get(2).toString() + ": " + al.get(5).toString() + " " + al_key.get(3).toString() + ": " + al.get(6).toString();
 
-            Object.setText("Object_" +getPosition()+ " Method: " + VTC._VTC.PROCESSOPTIONS[(Integer) al.get(1)] + ", Segment by: " + Channels.get((Integer) al.get(0)).toString());
+            Object.setText("Object_" +getPosition()+ " Method: " + vtea._VTEA.SEGMENTATIONOPTIONS[(Integer) al.get(1)] + ", Segment by: " + Channels.get((Integer) al.get(0)).toString());
             Comment.setText(MethodText);
             
             RebuildPanelObject();
@@ -1243,7 +1243,7 @@ public ArrayList ExtractSteps(ArrayList sb_al, int blocktype) {
         }
         this.notifyRepaintTabListeners();
 
-       // this.StartText.setForeground(VTC._VTC.INACTIVETEXT);
+       // this.StartText.setForeground(VTC._VTEA.INACTIVETEXT);
         this.OpenImage.setEnabled(false);
         this.DeleteAllSteps_PreProcessing.setEnabled(true);
         this.AddStep_Preprocessing.setEnabled(true);
